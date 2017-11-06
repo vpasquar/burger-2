@@ -1,0 +1,52 @@
+
+<div class = "headerContainer">
+  <h1>Burger Selector <h1> 
+  <img src="/img/burger.jpg" id="headerImg">
+
+</div>
+
+
+
+<div class="column-layout">
+  <div class="center-column">
+     <h3> Add a Burger ! </h3>
+     <br>
+     <form class="createForm" action="">
+        <div class="form-row">
+          <label for="name">Burger Name:</label>
+          <input type="text" id="name">
+          <button id="addSubmit" type="submit">Add Burger</button>
+        </div>
+     </form>
+  </div>
+
+  <div class="sidebar-one">
+    <h3>Ready to Eat!</h3>
+    <ul>
+         {{#each burgers}}
+           {{#unless this.devoured}}
+             <li>
+                <h5> {{this.id}}.{{this.burger_name}}
+                   <button type="submit" data-id="{{this.id}}"class="eatSubmit"> EAT THIS! </button>
+                </h5>   
+             </li>
+           {{/unless}}
+         {{/each}}   
+    </ul>  
+  </div>
+
+  <div class="sidebar-two">
+    <h3>Burgers Already Ate <h3>
+    <ul>
+         {{#each burgers}}
+           {{#if  this.devoured}}
+             <li>
+                <h5> {{this.id}}.{{this.burger_name}}
+                   <button type="submit" data-id="{{this.id}}" class="replaceSubmit"> Put it back! </button>
+                </h5>   
+             </li>
+           {{/if}}
+         {{/each}}   
+    </ul>  
+  </div>
+

@@ -1,28 +1,30 @@
 {
-  "name": "eatdaburger",
+  "name": "burger-2",
   "version": "1.0.0",
   "description": "Eat-Da-Burger! is a restaurant app that lets users input the names of burgers they'd like to eat.  Just a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM.",
   "main": "index.js",
   "scripts": {
-    "start":"node server.js",
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vpasquar/EatDaBurger.git"
+    "url": "git+https://github.com/vpasquar/burger-2.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/vpasquar/EatDaBurger/issues"
+    "url": "https://github.com/vpasquar/burger-2/issues"
   },
-  "homepage": "https://github.com/vpasquar/EatDaBurger#readme",
+  "homepage": "https://github.com/vpasquar/burger-2#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
     "express-handlebars": "^3.0.0",
     "method-override": "^2.3.10",
-    "mysql": "^2.15.0"
+    "mysql": "^2.15.0",
+    "mysql2": "^1.4.2",
+    "sequelize": "^4.22.5"
   }
 }
